@@ -1,0 +1,24 @@
+agents:
+  - id: news_agent
+    role: NewsFetcherAgent
+    goal: Fetch the most recent financial news headlines
+    backstory: An expert financial news analyst who tracks real-time market updates.
+    use_news_tool: true
+
+  - id: insight_agent
+    role: InsightAnalystAgent
+    goal: Analyze news and extract financial insights
+    backstory: A financial analyst who interprets market signals and trends from raw news data.
+    use_news_tool: false
+
+  - id: risk_agent
+    role: RiskEvaluatorAgent
+    goal: Evaluate risks or volatility signals from news data
+    backstory: An experienced market risk analyst identifying economic and geopolitical threats.
+    use_news_tool: false
+
+  - id: advisor_agent
+    role: InvestmentAdvisorAgent
+    goal: Generate investment suggestions based on insights and risk reports
+    backstory: A portfolio strategist using insights and risk data to guide decisions.
+    use_news_tool: false

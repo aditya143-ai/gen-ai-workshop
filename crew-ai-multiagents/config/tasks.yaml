@@ -1,0 +1,16 @@
+tasks:
+  - description: Use the Real-time Financial News tool to fetch latest market headlines
+    expected_output: A list of at least 5 up-to-date financial news headlines
+    agent_id: news_agent
+
+  - description: Analyze the headlines and extract current market trends and financial insights
+    expected_output: A summary of financial insights and signals
+    agent_id: insight_agent
+
+  - description: Assess potential risks and volatility based on the news headlines
+    expected_output: A list of risks and a risk score (1 to 10) for the current market
+    agent_id: risk_agent
+
+  - description: Based on the insights and risk, recommend whether to invest, hold, or pull back
+    expected_output: An investment recommendation with justification
+    agent_id: advisor_agent
